@@ -1,0 +1,20 @@
+<html>
+<head>
+
+</head>
+<body>
+  <p id="pic"></p>
+  <script>
+  function rand(){
+    var datalink=["apple","facebook","google","ibm","microsoft","yahoo"]
+    var s=Math.floor(Math.random()*6);
+  //  alert(datalink[s]);
+    document.getElementById("pic").innerHTML='<img src='+datalink[s]+'.png>';
+
+  }
+  var counter=0;
+//  function test()
+  setInterval("rand()",1000)
+  </script>
+</body>
+</html>
